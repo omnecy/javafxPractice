@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="DIFFERENCE" cache="true" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color:#DDDDDD" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.control.J19002Controller">
+  <children>
+    <Button id="button19001" blendMode="DARKEN" cancelButton="false" defaultButton="false" mnemonicParsing="false" onMouseReleased="#button19000Action" prefHeight="100.0" prefWidth="100.0" text="#19000 主界面" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+    <Label prefWidth="214.0" text="#19002 稀疏矩阵乘法" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="50.0">
+      <font>
+        <Font size="20.0" />
+      </font>
+      <textFill>
+        <Color blue="0.376" green="0.376" red="0.376" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label prefWidth="200.0" text="\@Author  omnec     V.1.0.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+    <Button id="button00" layoutX="682.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#button1Plus" prefHeight="50.0" prefWidth="50.0" text="+" />
+    <TextField id="textField" fx:id="text00" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="502.0" layoutY="210.0" prefHeight="50.0" prefWidth="60.0" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <Button id="button01" layoutX="732.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#button1Clc" prefHeight="50.0" prefWidth="50.0" text="clc" />
+    <Button layoutX="682.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#button2Plus" prefHeight="50.0" prefWidth="50.0" text="+" />
+    <Button layoutX="732.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#button2Clc" prefHeight="50.0" prefWidth="50.0" text="clc" />
+    <Label layoutX="452.0" layoutY="210.0" prefHeight="50.0" prefWidth="50.0" text="矩阵1" />
+    <Label layoutX="452.0" layoutY="302.0" prefHeight="50.0" prefWidth="50.0" text="矩阵2" />
+    <TextField id="textField" fx:id="text01" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="562.0" layoutY="210.0" prefHeight="50.0" prefWidth="60.0" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <Label layoutX="450.0" layoutY="137.0" prefWidth="382.9998779296875" text="请连续输入两矩阵的成员（行，列，值）" textFill="$x1">
+      <font>
+        <Font size="15.0" fx:id="x2" />
+      </font>
+    </Label>
+    <TextField id="textField" fx:id="text10" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="502.0" layoutY="302.0" prefHeight="50.0" prefWidth="60.0" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <TextField id="textField" fx:id="text11" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="562.0" layoutY="302.0" prefHeight="50.0" prefWidth="60.0" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <TextField id="textField" fx:id="text12" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="622.0" layoutY="302.0" prefHeight="50.0" prefWidth="60.0" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <TextField id="textField" fx:id="text02" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutX="622.0" layoutY="210.0" prefHeight="50.0" prefWidth="60.0001220703125" style="" text="">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x1" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <Label font="$x2" layoutX="450.0" layoutY="157.0" prefWidth="382.9998779296875" text="+：添加，clc：清空， X：相乘" textFill="$x1" />
+    <Label fx:id="label0" layoutX="833.0" layoutY="210.0" prefHeight="50.0" prefWidth="150.0" text="非0元素数量：0" />
+    <Label fx:id="label1" layoutX="833.0" layoutY="302.0" prefHeight="50.0" prefWidth="150.0" text="非0元素数量：0" />
+    <TextArea fx:id="textArea" layoutX="452.0" layoutY="401.0" prefHeight="316.0" prefWidth="400.0" text="" wrapText="true">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#bfbfbf" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextArea>
+    <Label font="$x2" layoutX="450.0" layoutY="177.0" prefWidth="382.9998779296875" text="ps： 矩阵A宽 == 矩阵B高 ， 程序会自动补齐" textFill="$x1" />
+    <Button layoutX="852.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#buttonX" prefHeight="70.0" prefWidth="70.0" text="X" />
+  </children>
+</AnchorPane>

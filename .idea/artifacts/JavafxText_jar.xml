@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavafxText:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavafxText_jar</output-path>
+    <root id="archive" name="JavafxText.jar">
+      <element id="module-output" name="JavafxText" />
+      <element id="module-output" name="J19000" />
+    </root>
+  </artifact>
+</component>

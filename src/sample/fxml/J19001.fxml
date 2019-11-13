@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="DIFFERENCE" cache="true" onKeyPressed="#setOnKeyEvent" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #DDDDDD" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.control.J19001Controller">
+  <children>
+    <Button id="button19001" blendMode="DARKEN" cancelButton="false" defaultButton="false" mnemonicParsing="false" onMouseReleased="#button19000Action" prefHeight="100.0" prefWidth="100.0" text="#19000 主界面" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+    <TextField fx:id="textField" blendMode="DIFFERENCE" cache="true" disable="false" editable="true" layoutY="136.0" prefHeight="50.0" prefWidth="400.0" style="" text="请输入需要导入的文本地址（txt）" AnchorPane.leftAnchor="450.0">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant>
+              <color>
+                <Color blue="0.375" green="0.375" red="0.375" fx:id="x1" />
+              </color>
+            </javafx.scene.effect.Light.Distant>
+          </light>
+        </Lighting>
+      </effect>
+    </TextField>
+    <TextArea fx:id="textArea" layoutY="256.0" prefHeight="378.0" prefWidth="400.0" text="" wrapText="true" AnchorPane.leftAnchor="450.0">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#bfbfbf" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextArea>
+    <Label prefWidth="214.0" text="#19001单词统计" textFill="$x1" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="50.0">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label prefWidth="200.0" text="\@Author  omnec     V.1.0.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+  </children>
+</AnchorPane>

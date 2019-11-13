@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="DIFFERENCE" cache="true" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color:#DDDDDD" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.control.J19003Controller">
+  <children>
+    <Button id="button19001" blendMode="DARKEN" cancelButton="false" defaultButton="false" mnemonicParsing="false" onMouseReleased="#button19000Action" prefHeight="100.0" prefWidth="100.0" text="#19000 主界面" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+    <GridPane layoutX="150.0" layoutY="301.0" prefHeight="143.0" prefWidth="171.0">
+      <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="59.0" prefWidth="56.000099999997474" text="" />
+            <Button fx:id="button2" mnemonicParsing="false" prefHeight="59.0" prefWidth="57.0" text="" />
+            <Button fx:id="button3" mnemonicParsing="false" prefHeight="59.0" prefWidth="57.0" text="" />
+          </children>
+        </HBox>
+        <Button mnemonicParsing="false" onMouseClicked="#attack" prefHeight="82.0" prefWidth="171.0" text="Attack" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <TextArea fx:id="textArea" layoutX="450.0" layoutY="200.0" prefHeight="378.0" prefWidth="400.0" text="战斗记录：&#10;" wrapText="true">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#bfbfbf" />
+          </light>
+        </Lighting>
+      </effect>
+    </TextArea>
+    <Label prefWidth="214.0" text="#19003 攻击力计算" textFill="#606060" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="50.0">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label prefWidth="200.0" text="\@Author  omnec     V.1.0.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+  </children>
+</AnchorPane>
